@@ -1,0 +1,14 @@
+@import "variables.scss";
+@import "normalize.css";
+@import "styles.css";
+@import "hero";
+@import "header";
+@import "stats";
+@import "leads";
+@import "pricing";
+@import "question";
+@import "footer";
+
+* {
+  border: 1px solid red;
+}

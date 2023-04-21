@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--white-dark);
+  box-shadow: 0 -0.3125rem 2.5rem var(--gray-2);
+  margin-top: 3.6875rem;
+}
+.footer .footer__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__inner .footer__left {}
+.footer__inner .footer__right {
+  display: flex;
+  align-self: center;
+  column-gap: 1.25rem;
+}
+.footer__left .logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.625rem;
+  line-height: 1.1538;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: var(--blue-dark);
+  margin:0;
+  padding: 1.25rem 0 0.4375rem 0;
+}
+.footer__left .copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6875rem;
+  line-height: 1.3636;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--gray-3);
+  margin:0;
+  padding: 0 0 1.0625rem 0;
+}
+
+.footer__right .logo__outer {
+  display: block;
+}

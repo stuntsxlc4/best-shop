@@ -1,0 +1,199 @@
+.pricing {
+  background-color: var(--white);
+  box-sizing: border-box;
+  margin: 0 0 7.5625rem 0;
+}
+.pricing .pricing__inner {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--white);
+  max-width: var(--max-width);
+  display: flex;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing .pricing__hdl {
+  color: var(--black);
+  font-size: 2.25rem;
+  line-height: 1.1666;
+  letter-spacing: 0rem;
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  margin: 0 0 1.875rem 0;
+}
+
+.pricing .priceList {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 3.625rem;
+}
+
+.pricing .pricing__option {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 23.25rem;
+  height: calc(100% * 1.24);
+  position: relative;
+  background: var(--white);
+  border: 0.0625rem solid var(--pink-3);
+  border-radius: 1.125rem;
+  text-align: center;
+}
+
+.pricing .pricing__option.pricing__option--pro {
+  width: 100%;
+  max-width: 25.3125rem;
+  border: 0.0625rem solid var(--blue-light);
+  box-shadow: 0.3125rem 0.625rem 1.6875rem var(--green-light);
+}
+
+.pricing .pricing__option.pricing__option--premium {
+  border: 0.0625rem solid var(--green-dark);
+}
+
+.pricing__option .option__name {
+  font: normal normal bold 1.25rem/0.0625rem Raleway;
+  letter-spacing: 0;
+  color: var(--gray-6);
+  margin: 2.125rem 0 2.875rem 0;
+}
+.pricing__option .option__price {
+  font: normal normal 300 2.875rem/0.125rem Open Sans;
+  letter-spacing: 0;
+  color: var(--pink-3);
+  margin: 0 0 1.875rem 0;
+}
+
+.pricing__option .option__price.option__price--pro {
+  color: var(--blue-light);
+}
+.pricing__option .option__price.option__price--premium {
+  color: var(--green-dark);
+}
+
+.pricing__option .option__remark {
+  font-size: 0.75rem;
+  line-height: 0.0625;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0;
+  color: var(--gray-6);
+  margin: 0 0 3.5rem 0;
+}
+.pricing__option .option__capacity {
+  font-size: 0.875rem;
+  line-height: 2.5625;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+  color: var(--black);
+  margin: 0 0 1.25rem 0;
+}
+.pricing__option .option__domains {
+  font-size: 0.875rem;
+  line-height: 2.5625;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+  color: var(--black);
+  margin: 0 0 1.25rem 0;
+}
+.pricing__option .option__emails {
+  font-size: 0.875rem;
+  line-height: 2.5625;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+  color: var(--black);
+  margin: 0 0 1.25rem 0;
+}
+.pricing__option .option__licensing {
+  font-size: 0.875rem;
+  line-height: 2.5625;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+  color: var(--black);
+  margin: 0 0 1.25rem 0;
+}
+.pricing__option .option__support {
+  font-size: 0.875rem;
+  line-height: 2.5625;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0;
+  color: var(--black);
+  margin: 0 0 5.0625rem 0;
+}
+.pricing__option .pricing__btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: inline-block;
+  background: var(--pink-4);
+  padding: 0.53125rem 3.5625rem;
+  border-radius: 1.4375rem;
+  font-size: 0.8125rem;
+  line-height: 2.5625;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: var(--white);
+}
+.pricing__option .pricing__btn.pricing__btn--pro {
+  background-color: var(--blue-light);
+  padding: 0.53125rem 4rem;
+}
+
+.pricing__option .pricing__btn.pricing__btn--premium {
+  background-color: var(--green-dark);
+}
+
+.pricing__option--pro .biggerSmallMargin {
+  margin: 0 0 1.5625rem 0;
+}
+
+.pricing__option--pro .biggerRemarkMargin {
+  margin: 0 0 4.1875rem 0;
+}
+
+.option__ticker::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/checkmark.svg");
+  background-size: 0.3125rem 0.3125rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border: 0.0625rem solid var(--green-dark);
+  border-radius: 0.125rem;
+  margin-right: 0.3125rem;
+}
+
+.pricing .pricing__option .option__not {}
+
+.pricing .pricing__option .option__not::before {
+  content: "x";
+  color: var(--pink-4);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.5625rem;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  border: 0.0625rem solid var(--pink-4);
+  margin: 0 0.3125rem 0 0;
+  padding:0;
+  border-radius: 0.125rem;
+}
